@@ -1,135 +1,206 @@
 html {
-	background: #A8EFA6;
+  background: #A8EFA6;
 }
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
-	width: 900px;
-	background: #fff;
-	border: 4px solid #2C3E50;
-	margin: 20px auto;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 900px;
+  background: #fff;
+  border: 4px solid #4E9066;
+  margin: 20px auto;
 }
 
 h1 {
-	padding: 10px;
-	font-size: 21px;
-	background: #2C3E50;
-	margin: 0;
-	color: #fff;
+  padding: 10px;
+  font-size: 21px;
+  background: #4DAA6F;
+  margin: 0;
+  color: #fff;
 }
 
-ul.list {
-	list-style: none;
-	margin: 20px;
-	padding: 0;
+.books {
+  list-style: none;
+  margin: 15px;
+  padding: 0;
+  overflow: hidden;
 }
 
-ul.list li {
-	overflow: hidden;
-	border-bottom: 1px solid #ddd;
-	padding-bottom: 10px;
-	margin-bottom: 20px;
+.books li {
+  width: 190px;
+  text-align: center;
+  height: 240px;
+  float: left;
+  margin: 20px 10px;
+  font-size: 15px;
 }
 
-ul.list b {
-	display: block;
-	font-size: 18px;
-	margin-bottom: 5px;
-	color: #2980B9;
+.books b {
+  display: block;
+  margin: 5px 0;
+  font-weight: normal;
 }
 
-ul.list i, ul.list small {
-	color: #888;
-	font-size: 18px;
-	margin-right: 10px;
+.books i, .books small {
+  font-size: 12px;
 }
 
-ul.list span {
-	color: #8E44AD;
+.books span {
+  color:  #8E44AD;
 }
 
-ul.list div {
-	margin: 5px 0;
-	font-size: 13px;
-	line-height: 1.5em;
-	color: #555;
-}
-
-ul.list img {
-	margin-left: 20px;
-}
-
-ul.list a {
-	color: #2980B9;
-}
-
-ul.list a.del {
-	color: #D35400;
+.books a.del {
+  color: #D35400;
 }
 
 a.new {
-	display: block;
-	padding: 8px 0;
-	text-align: center;
-	width: 160px;
-	margin: 10px;
-	color: #fff;
-	background: #1ABC9C;
-	border: 1px solid #ccc;
-	text-decoration: none;
+  display: block;
+  padding: 8px 0;
+  text-align: center;
+  width: 160px;
+  margin: 10px;
+  color: #fff;
+  background: #4DAA6F;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  float: left;
+}
+
+a.back {
+  color: #000;
 }
 
 form {
-	margin: 20px;
+  margin: 20px;
 }
 
 form label {
-	display: block;
-	margin-top: 10px;
-	color: #555;
+  display: block;
+  margin-top: 10px;
+  color: #555;
 }
 
 input[type=text],
 input[type=password],
 textarea,
 select {
-	font-family: Arial, Helvetica,sans-serif;
-	border: 1px solid #ddd;
-	padding: 6px;
-	width: 300px;
-	background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid #ddd;
+  padding: 6px;
+  width: 300px;
+  background: #fff;
 }
 
 textarea {
-	height: 100px;
+  height: 100px;
 }
 
 input[type=submit] {
-	padding: 10px 24px;
-	margin-right: 10px;
+  padding: 10px 24px;
+  margin-right: 10px;
+  background: #4E9066;
 }
 
-
 ul.menu {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background: #16A089;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #16A085;
 }
 
 ul.menu li {
-	float: left;
-	border-right: 1px solid #1ABC9C;
+  float: left;
+  border-right: 1px solid #1ABC9C;
 }
 
 ul.menu a {
-	display: block;
-	padding: 10px 20px;
-	text-decoration: none;
-	color: #fff;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
 }
 
 ul.menu a:hover {
-	background: #1ABC9C;
+  background: #1ABC9C;
+}
+
+ul.rental {
+  list-style: none;
+  margin: 20px;
+  padding: 0;
+  line-height: 1.5em;
+}
+
+ul.rental li {
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+ul.rental .rental {
+  float: left;
+  width: 300px;
+  border-right: 1px dotted #ddd;
+  margin-right: 20px;
+}
+
+ul.rental .items {
+  float: left;
+  width: 500px;
+}
+
+ul.rental b,
+ul.rental i,
+ul.rental span {
+  display: block;
+}
+
+ul.rental .items a {
+  font-weight: normal;
+  margin-right: 6px;
+}
+
+ul.rental .items b {
+  border-bottom: 1px dotted #ddd;
+  line-height: 1.8em;
+}
+
+ul.rental li.taken {
+  color: #999;
+}
+
+li.taken .rental b,
+li.taken .rental i,
+li.taken .rental p,
+li.taken .rental span {
+  text-decoration: line-through;
+}
+
+div.paging {
+	float: right;
+	margin: 15px 20px 0 0;
+}
+
+div.paging a, div.paging span {
+	margin-left: 10px;
+}
+
+div.error {
+	text-align: center;
+	font-size: 14px;
+	margin: 10px 20px;
+	background: #ffd;
+	border: 1px solid #950;
+	color: #950;
+	font-weight: bold;
+	padding: 8px 0;
+}
+
+label.error {
+	color: #900;
+	font-size: 13px;
+	font-style: italic;
+	margin-top: -1px;
 }
